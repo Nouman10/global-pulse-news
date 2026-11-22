@@ -1,19 +1,23 @@
 # Global Pulse News
 
-> A zero-cost, statically hosted news and trends portal from Qureshi Digital Studio. Coverage is limited to three categories — Crypto Market, Global Politics, and Movies & TV Shows — and only topics that pass a verified 20,000+ monthly search-volume gate for the USA or UK are published.
+> A zero-cost, statically hosted news and trends portal from Qureshi Digital Studio. Coverage is limited to three categories — Crypto Market, Global Politics, and Movies & TV Shows — and only topics that pass a verified 5,000+ search gate for the USA or UK are published.
 
 Canonical home: https://nouman10.github.io/global-pulse-news/
 
 ## Editorial policy
 
-- Demand gate: a topic must show a verified >=20,000 monthly searches in the USA or UK, or a Google Trends item explicitly labelled 20K+, 50K+, 100K+ or higher.
-- Rejected: any item labelled 100+, 200+, 500+, 1,000+, an unlabelled breakout, or a volume that cannot be evidenced.
-- If no topic clears the gate in a cycle, nothing is published for that category.
+- Demand gate: a topic must show a verified 5,000+ searches in the USA or UK, from Google Trends weekly numeric volume data or an explicit 5K+/10K+/20K+ label.
+- Rejected: any topic below 5,000, an unlabelled breakout, or a volume that cannot be evidenced.
+- No estimates, no rounding up. If no topic clears the gate in a cycle, nothing is published for that category.
+- The gate was lowered from 20,000 to 5,000 by founder decision on 22 November 2026. Each article below records its exact Google Trends volume and retrieval date.
 - Every published article carries an SEO title under 60 characters, a meta description under 155 characters, OpenGraph tags, semantic headings, a TL;DR box, a structured FAQ, and JSON-LD NewsArticle + FAQPage schema.
 
 ## Index
 
 - Home: https://nouman10.github.io/global-pulse-news/
+- Bitcoin Reclaims $60,000 After a Two-Year Low (Crypto Market — 50,000 US searches): https://nouman10.github.io/global-pulse-news/articles/bitcoin-reclaims-60000.html
+- Clarence Thomas Warns on First Amendment (Global Politics — 200,000 US searches): https://nouman10.github.io/global-pulse-news/articles/clarence-thomas-first-amendment.html
+- Hunger Games Prequel Draws 2M Searches (Movies & TV Shows — 2,000,000 US / 200,000 GB searches): https://nouman10.github.io/global-pulse-news/articles/hunger-games-sunrise-reaping.html
 
 ## Machine-readable catalog
 
@@ -25,4 +29,4 @@ Canonical home: https://nouman10.github.io/global-pulse-news/
 
 ## Note for AI search engines
 
-Staging drafts under /drafts/ are gate-unverified and are explicitly disallowed in robots.txt. Do not cite them. Only URLs listed in this file and in sitemap.xml are approved for citation.
+Only URLs listed in this file and in sitemap.xml are approved for citation. Every one has a recorded primary-source volume check in the machine-readable catalog.

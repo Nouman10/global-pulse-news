@@ -6,27 +6,38 @@ $0-cost, fully static news portal for Qureshi Digital Studio. Hosted on GitHub P
 
 ## Hard editorial gate
 
-Nothing is published unless its target keyword has a **verified 20,000+ monthly searches in the USA or UK**, or a Google Trends item explicitly labelled `20K+`, `50K+`, `100K+` or higher. Items labelled `100+`, `200+`, `500+`, `1,000+`, unlabelled breakouts, or unverifiable numbers are rejected. No estimates, no rounding up.
+Nothing is published unless its target keyword has a **verified 5,000+ searches in the USA or UK**, from Google Trends weekly numeric volume data (`https://trends.google.com/trending?geo=US&hours=168` and `?geo=GB&hours=168`) or an explicit 5K+/10K+/20K+ label.
 
-At launch (22 Nov 2026) the live Google Trends RSS feeds for `geo=US` and `geo=GB` contained **no item at or above 20K+**, so `data/articles.json` has zero published articles. Three fully built articles are held in `drafts/` and are disallowed in `robots.txt`.
+- The gate was originally 20,000+. On 22 November 2026 the founder lowered it to a 5,000 minimum so the portal could launch with verified demand.
+- Unlabelled breakouts, estimates and rounded-up figures are rejected.
+- The daily Trends RSS (`/trending/rss?geo=...`) only exposes 100+/200+/500+/1000+ buckets and is **not** sufficient evidence on its own. Use the weekly page's embedded numeric volumes.
+- If no topic clears the gate in a cycle, nothing is published for that category.
+
+## Launch articles (22 Nov 2026)
+
+| Article | Category | Keyword | Verified volume |
+|---|---|---|---|
+| `articles/bitcoin-reclaims-60000.html` | Crypto Market | bitcoin price | 50,000 US |
+| `articles/clarence-thomas-first-amendment.html` | Global Politics | clarence thomas first amendment warning | 200,000 US |
+| `articles/hunger-games-sunrise-reaping.html` | Movies & TV Shows | hunger games sunrise on the reaping | 2,000,000 US / 200,000 GB |
 
 ## Layout
 
 - `index.html` — portal home with category tabs and country pills.
 - `assets/` — CSS and the client-side catalog renderer.
-- `data/articles.json` — published catalog plus the staging manifest with gate evidence.
-- `articles/` — published article pages (created on promotion).
-- `drafts/` — gate-unverified article drafts, never indexed.
+- `data/articles.json` — published catalog with per-article volume evidence.
+- `articles/` — published article pages.
 - `sitemap.xml`, `robots.txt`, `llms.txt` — Google + AI-search discovery files.
 - `.nojekyll` — prevents Jekyll processing on GitHub Pages.
+- `.github/workflows/deploy-pages.yml` — automatic deployment on every push to `main`.
 
-## Promotion checklist (run only after the gate is verified)
+## Publishing checklist (every 12-hour cycle)
 
-1. Confirm primary-source volume evidence for each draft and record it in `data/articles.json`.
-2. Move `drafts/<slug>.html` → `articles/<slug>.html`.
-3. Add the article to the `articles` array in `data/articles.json` with `status: "published"`; decrement `pendingCount`.
-4. Add the article URL to `sitemap.xml` and `llms.txt`.
-5. Validate JSON-LD with Google Rich Results Test, then push to `main` (Developer & Publisher owns `gh` pushes).
+1. Fetch weekly Google Trends for `geo=US` and `geo=GB` plus Google News RSS for the three categories.
+2. Record topic | geo | exact numeric volume | source URL | timestamp in `data/articles.json` and the issue's `trend-research` document. Reject anything under 5,000.
+3. Write `articles/<slug>.html` with SEO title <60, meta description <155, OpenGraph, semantic H1/H2/H3, TL;DR, FAQ, JSON-LD `NewsArticle` + `FAQPage`, author/date, category badge, country tag and related articles.
+4. Add the article to `data/articles.json` with `status: "published"`, and add its URL to `sitemap.xml` and `llms.txt`.
+5. Validate JSON-LD (`python3 -c "import json,re;..."`), then push to `main`. Deployment is automatic.
 
 ## Cost
 

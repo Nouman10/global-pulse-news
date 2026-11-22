@@ -2,39 +2,58 @@
   "site": {
     "name": "Global Pulse News",
     "baseUrl": "https://nouman10.github.io/global-pulse-news/",
-    "updated": "2026-11-22T08:50:00Z",
-    "gate": "Verified >=20,000 monthly searches in USA or UK, or Google Trends item labelled 20K+/50K+/100K+"
+    "updated": "2026-11-22T10:05:00Z",
+    "gate": "Verified >=5,000 searches in USA or UK, from Google Trends weekly numeric volume data or an explicit 5K+/10K+/20K+ label. No estimates.",
+    "gateChanged": "Founder decision 2026-11-22: minimum lowered from 20,000 to 5,000 (confirmation a9e3c8d0, reason 'minumun 5K')."
   },
-  "publishedCount": 0,
-  "pendingCount": 3,
-  "articles": [],
-  "pending": [
+  "publishedCount": 3,
+  "pendingCount": 0,
+  "articles": [
     {
       "slug": "bitcoin-reclaims-60000",
       "category": "Crypto Market",
-      "country": "Global",
+      "country": "USA",
       "title": "Bitcoin Reclaims $60,000 After a Two-Year Low",
-      "gate": "NOT VERIFIED — staged only",
-      "evidence": "Google News RSS (US, 22 Nov 2026): Reuters, CoinDesk, Barron's, Crypto News. Google Trends RSS US 22 Nov 2026 carried no crypto item above 1000+.",
-      "draft": "drafts/bitcoin-reclaims-60000.html"
+      "summary": "Bitcoin bounced off a two-year low and reclaimed $60,000. Here is what moved the market and what analysts are watching next.",
+      "author": "Global Pulse Desk",
+      "date": "2026-11-22",
+      "status": "published",
+      "keyword": "bitcoin price",
+      "searchVolume": 50000,
+      "volumeGeo": "US",
+      "volumeSource": "Google Trends — https://trends.google.com/trending?geo=US&hours=168 (embedded weekly volume data)",
+      "volumeCheckedAt": "2026-11-22T10:02:00Z"
     },
     {
-      "slug": "trump-contractor-oversight",
+      "slug": "clarence-thomas-first-amendment",
       "category": "Global Politics",
       "country": "USA",
-      "title": "Trump Moves to Tighten Oversight of Federal Contractors",
-      "gate": "NOT VERIFIED — staged only",
-      "evidence": "Google Trends RSS US 22 Nov 2026: 'president trump' labelled 500+ (below gate). Google News RSS US: NPR, NYT, PBS, Politico, 22 Nov 2026.",
-      "draft": "drafts/trump-contractor-oversight.html"
+      "title": "Clarence Thomas Warns on First Amendment",
+      "summary": "After the Supreme Court declined a doctors' free-speech case, Thomas warned that a state rule could turn citizens into government mouthpieces.",
+      "author": "Global Pulse Desk",
+      "date": "2026-11-22",
+      "status": "published",
+      "keyword": "clarence thomas first amendment warning",
+      "searchVolume": 200000,
+      "volumeGeo": "US",
+      "volumeSource": "Google Trends — https://trends.google.com/trending?geo=US&hours=168 (embedded weekly volume data)",
+      "volumeCheckedAt": "2026-11-22T10:02:00Z"
     },
     {
-      "slug": "weekend-what-to-watch",
+      "slug": "hunger-games-sunrise-reaping",
       "category": "Movies & TV Shows",
       "country": "Global",
-      "title": "What to Watch This Weekend: Tracker, Hallmark and Free Classics",
-      "gate": "NOT VERIFIED — staged only",
-      "evidence": "Google News RSS US/GB 22 Nov 2026: TVLine, Collider, The Guardian, The Telegraph. No Movies/TV item above 1000+ in Trends RSS US/GB.",
-      "draft": "drafts/weekend-what-to-watch.html"
+      "title": "Hunger Games Prequel Draws 2M Searches",
+      "summary": "Sunrise on the Reaping splits critics and opens strong at the box office. What the reviews and the numbers actually say.",
+      "author": "Global Pulse Desk",
+      "date": "2026-11-22",
+      "status": "published",
+      "keyword": "hunger games sunrise on the reaping",
+      "searchVolume": 2000000,
+      "volumeGeo": "US + GB (2,000,000 US / 200,000 GB)",
+      "volumeSource": "Google Trends — https://trends.google.com/trending?geo=US&hours=168 and ?geo=GB&hours=168 (embedded weekly volume data)",
+      "volumeCheckedAt": "2026-11-22T10:02:00Z"
     }
-  ]
+  ],
+  "pending": []
 }
