@@ -38,10 +38,10 @@
     });
     if (!shown.length) {
       var pending = siteData.pendingCount || 0;
-      grid.innerHTML = '<div class="empty-state"><strong>No gate-approved articles in this view yet.</strong>' +
-        'Topics are held in staging until a verified 20,000+ US/UK search volume is confirmed. ' +
+      grid.innerHTML = '<div class="empty-state"><strong>No stories here yet.</strong>' +
+        'Fresh stories appear here as soon as a topic clears our demand check. ' +
         (pending ? pending + ' article draft' + (pending === 1 ? ' is' : 's are') + ' awaiting verification. ' : '') +
-        '<span class="gate-tag">20K+ GATE ACTIVE</span></div>';
+        'Check back after the next research cycle.</div>';
       return;
     }
     grid.innerHTML = shown.map(card).join('');
