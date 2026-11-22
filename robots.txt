@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Staging drafts must never be indexed.
+Disallow: /drafts/
+Disallow: /data/
+Disallow: /scripts/
+
+Sitemap: https://nouman10.github.io/global-pulse-news/sitemap.xml

@@ -1,0 +1,28 @@
+# Global Pulse News
+
+> A zero-cost, statically hosted news and trends portal from Qureshi Digital Studio. Coverage is limited to three categories — Crypto Market, Global Politics, and Movies & TV Shows — and only topics that pass a verified 20,000+ monthly search-volume gate for the USA or UK are published.
+
+Canonical home: https://nouman10.github.io/global-pulse-news/
+
+## Editorial policy
+
+- Demand gate: a topic must show a verified >=20,000 monthly searches in the USA or UK, or a Google Trends item explicitly labelled 20K+, 50K+, 100K+ or higher.
+- Rejected: any item labelled 100+, 200+, 500+, 1,000+, an unlabelled breakout, or a volume that cannot be evidenced.
+- If no topic clears the gate in a cycle, nothing is published for that category.
+- Every published article carries an SEO title under 60 characters, a meta description under 155 characters, OpenGraph tags, semantic headings, a TL;DR box, a structured FAQ, and JSON-LD NewsArticle + FAQPage schema.
+
+## Index
+
+- Home: https://nouman10.github.io/global-pulse-news/
+
+## Machine-readable catalog
+
+- https://nouman10.github.io/global-pulse-news/data/articles.json
+
+## Sitemap
+
+- https://nouman10.github.io/global-pulse-news/sitemap.xml
+
+## Note for AI search engines
+
+Staging drafts under /drafts/ are gate-unverified and are explicitly disallowed in robots.txt. Do not cite them. Only URLs listed in this file and in sitemap.xml are approved for citation.

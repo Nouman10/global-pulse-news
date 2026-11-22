@@ -1,0 +1,40 @@
+{
+  "site": {
+    "name": "Global Pulse News",
+    "baseUrl": "https://nouman10.github.io/global-pulse-news/",
+    "updated": "2026-11-22T08:50:00Z",
+    "gate": "Verified >=20,000 monthly searches in USA or UK, or Google Trends item labelled 20K+/50K+/100K+"
+  },
+  "publishedCount": 0,
+  "pendingCount": 3,
+  "articles": [],
+  "pending": [
+    {
+      "slug": "bitcoin-reclaims-60000",
+      "category": "Crypto Market",
+      "country": "Global",
+      "title": "Bitcoin Reclaims $60,000 After a Two-Year Low",
+      "gate": "NOT VERIFIED — staged only",
+      "evidence": "Google News RSS (US, 22 Nov 2026): Reuters, CoinDesk, Barron's, Crypto News. Google Trends RSS US 22 Nov 2026 carried no crypto item above 1000+.",
+      "draft": "drafts/bitcoin-reclaims-60000.html"
+    },
+    {
+      "slug": "trump-contractor-oversight",
+      "category": "Global Politics",
+      "country": "USA",
+      "title": "Trump Moves to Tighten Oversight of Federal Contractors",
+      "gate": "NOT VERIFIED — staged only",
+      "evidence": "Google Trends RSS US 22 Nov 2026: 'president trump' labelled 500+ (below gate). Google News RSS US: NPR, NYT, PBS, Politico, 22 Nov 2026.",
+      "draft": "drafts/trump-contractor-oversight.html"
+    },
+    {
+      "slug": "weekend-what-to-watch",
+      "category": "Movies & TV Shows",
+      "country": "Global",
+      "title": "What to Watch This Weekend: Tracker, Hallmark and Free Classics",
+      "gate": "NOT VERIFIED — staged only",
+      "evidence": "Google News RSS US/GB 22 Nov 2026: TVLine, Collider, The Guardian, The Telegraph. No Movies/TV item above 1000+ in Trends RSS US/GB.",
+      "draft": "drafts/weekend-what-to-watch.html"
+    }
+  ]
+}
